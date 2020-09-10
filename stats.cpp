@@ -2,10 +2,10 @@
 
 float findAverage(const std::vector<float>& numbers)
 {
-    int i,sum=0;
+    int sum=0;
     float avg;
     
-    for(i=0; i<numbers.size(); i++)
+    for(unsigned int i=0; i<numbers.size(); i++)
         sum = sum + numbers[i];
     avg = sum/numbers.size();
     return avg;
@@ -13,10 +13,9 @@ float findAverage(const std::vector<float>& numbers)
 
 float findMax(const std::vector<float>& numbers)
 {
-    int i;
     float max = numbers[0];
     
-    for(i=0; i<numbers.size(); i++)
+    for(unsigned int i=0; i<numbers.size(); i++)
     {
         if(numbers[i] > max)
             max = numbers[i];
@@ -26,10 +25,9 @@ float findMax(const std::vector<float>& numbers)
 
 float findMin(const std::vector<float>& numbers)
 {
-    int i;
     float min = numbers[0];
     
-    for(i=0; i<numbers.size(); i++)
+    for(unsigned int i=0; i<numbers.size(); i++)
     {
         if(numbers[i] < min)
             min = numbers[i];
